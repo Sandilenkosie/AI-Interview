@@ -3,6 +3,15 @@ import "server-only";
 import { StackServerApp } from "@stackframe/stack";
 import { stackClientApp } from "./client";
 
-export const stackServerApp = new StackServerApp({
-  inheritsFrom: stackClientApp,
-});
+// Only initialize the server-side Stack app when the project ID is provided.
+// This prevents Next.js build-time collection from failing when the
+// NEXT_PUBLIC_STACK_PROJECT_ID environment variable is not set (e.g. in
+// preview builds or before the deploy environment is configured).
+export const stackServerApp =
+  process.env.NEXT_PUBLIC_STACK_PROJECT_ID && process.env.NEXT_PUBLIC_STACK_PROJECT_ID.length > 0
+    ? new StackServerApp({
+        inheritsFrom: stackClientApp,
+      })
+    : undefined;
+
+// Note: callers should handle the possibility that `stackServerApp` is undefined.
