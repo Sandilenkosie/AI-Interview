@@ -1,6 +1,1 @@
-[00:00:02.034] Server  LOG      ✓ Ready in 1467ms
-[00:00:14.879] Server  LOG      ○ Compiling /dashboard/interviews ...
-[00:00:20.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:26.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:35.959] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:00:35.959] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:02.144] Server  LOG      ✓ Ready in 1543ms
