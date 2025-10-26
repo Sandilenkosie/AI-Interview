@@ -1041,6 +1041,10 @@ body {
   max-width: calc(100% - 2rem);
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-max {
   max-width: max-content;
 }

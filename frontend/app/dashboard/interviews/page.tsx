@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Star, Brain, User } from "lucide-react";
 import DashboardLayout from "@/components/DashboardLayout";
 import { useUser } from "@stackframe/stack";
+import { stackClientApp } from "../../../stack/client";
 
 interface Interview {
   id: number;
@@ -22,7 +23,7 @@ interface Interview {
   created_at: string;
 }
 
-export default function InterviewsPage() {
+function InterviewsContent() {
   const user = useUser();
   const router = useRouter();
   const [interviews, setInterviews] = useState<Interview[]>([]);
@@ -406,4 +407,23 @@ export default function InterviewsPage() {
       </div>
     </DashboardLayout>
   );
+}
+
+export default function InterviewsPageWrapper() {
+  // If Stack isn't configured, render a fallback so prerendering doesn't call
+  // hooks without a provider.
+  if (!stackClientApp) {
+    return (
+      <DashboardLayout activeTab="interviews">
+        <div className="container mx-auto px-8 py-8">
+          <div className="text-center text-gray-400 py-16 bg-slate-800 rounded-2xl border border-slate-600">
+            <h2 className="text-2xl font-semibold">Interviews unavailable</h2>
+            <p className="mt-2 text-sm">Authentication is not configured. Set NEXT_PUBLIC_STACK_PROJECT_ID to enable interviews.</p>
+          </div>
+        </div>
+      </DashboardLayout>
+    );
+  }
+
+  return <InterviewsContent />;
 }

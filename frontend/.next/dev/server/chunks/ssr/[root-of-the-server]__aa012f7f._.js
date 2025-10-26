@@ -20,9 +20,10 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stackframe$2f$stack$2f$dist$2f$esm$2f$lib$2f$stack$2d$app$2f$apps$2f$interfaces$2f$client$2d$app$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@stackframe/stack/dist/esm/lib/stack-app/apps/interfaces/client-app.js [app-rsc] (ecmascript)");
 ;
-const stackClientApp = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stackframe$2f$stack$2f$dist$2f$esm$2f$lib$2f$stack$2d$app$2f$apps$2f$interfaces$2f$client$2d$app$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["StackClientApp"]({
+const stackClientApp = ("TURBOPACK compile-time value", "b54d76af-13f0-4aba-9976-76ab532306d1") && ("TURBOPACK compile-time value", "b54d76af-13f0-4aba-9976-76ab532306d1").length > 0 ? new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stackframe$2f$stack$2f$dist$2f$esm$2f$lib$2f$stack$2d$app$2f$apps$2f$interfaces$2f$client$2d$app$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["StackClientApp"]({
     tokenStore: "nextjs-cookie"
-});
+}) : undefined; // Note: consumers should handle that `stackClientApp` may be undefined when
+ // the environment variable isn't set (e.g. local dev without config or preview builds).
 }),
 "[next]/internal/font/google/geist_a71539c9.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
 
@@ -110,20 +111,22 @@ function RootLayout({ children }) {
         lang: "en",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
             className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_a71539c9$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_mono_8d43a2aa$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} antialiased`,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stackframe$2f$stack$2f$dist$2f$esm$2f$providers$2f$stack$2d$provider$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__StackProvider$3e$__["StackProvider"], {
+            children: __TURBOPACK__imported__module__$5b$project$5d2f$stack$2f$client$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["stackClientApp"] ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stackframe$2f$stack$2f$dist$2f$esm$2f$providers$2f$stack$2d$provider$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__StackProvider$3e$__["StackProvider"], {
                 app: __TURBOPACK__imported__module__$5b$project$5d2f$stack$2f$client$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["stackClientApp"],
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stackframe$2f$stack$2f$dist$2f$esm$2f$providers$2f$theme$2d$provider$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["StackTheme"], {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 31,
-                    columnNumber: 44
+                    lineNumber: 32,
+                    columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
                 lineNumber: 31,
-                columnNumber: 8
-            }, this)
+                columnNumber: 11
+            }, this) : // If Stack isn't configured, render children without the provider so
+            // the app can build and run; Stack-dependent features will be disabled.
+            children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
             lineNumber: 29,
