@@ -26,11 +26,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><StackProvider app={stackClientApp}><StackTheme>
-        {children}
-      </StackTheme></StackProvider></body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {stackClientApp ? (
+          <StackProvider app={stackClientApp}>
+            <StackTheme>{children}</StackTheme>
+          </StackProvider>
+        ) : (
+          // If Stack isn't configured, render children without the provider so
+          // the app can build and run; Stack-dependent features will be disabled.
+          children
+        )}
+      </body>
     </html>
   );
 }
