@@ -8,10 +8,6 @@ class StackAuthAuthentication(BaseAuthentication):
         tenant_token = request.headers.get('X-auth-tenant')
         if not tenant_token:
             return None
-
-        # Validate token with Stack Auth API (placeholder)
-        # In real implementation, make a request to Stack Auth API
-        # For now, assume it's valid if present
         if tenant_token == 'valid_token':  # Placeholder
             return (None, None)  # Or create a user object
         else:
