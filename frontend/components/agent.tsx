@@ -37,8 +37,10 @@ interface Message {
 export const Agent = ({ userName, userId}: AgentProps) => {
   const router = useRouter();
 
+
   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [currentSpeaking, setCurrentSpeaking] = useState<'user' | 'ai'>('user');
   const [messages, setMessages] = useState<saveMessage[]>([]);
 
   useEffect(() => {
@@ -117,7 +119,7 @@ export const Agent = ({ userName, userId}: AgentProps) => {
             </Card>
 
             <Card className={`flex-1 p-6 bg-slate-800 border-2 transition-all duration-300 ${
-              isSpeaking ? 'border-purple-400 shadow-lg shadow-purple-400/20' : 'border-slate-600'
+              currentSpeaking === 'ai' ? 'border-purple-400 shadow-lg shadow-purple-400/20' : 'border-slate-600'
             }`}>
               <CardContent>
                 <div className="text-center text-sm text-gray-300 min-h-[120px] flex flex-col items-center justify-center">

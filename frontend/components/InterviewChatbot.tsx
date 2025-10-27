@@ -115,28 +115,6 @@ export default function InterviewChatbot({ isOpen, onClose, onInterviewGenerated
     }
   }, []);
 
-  // When a new bot message is added, optionally speak it using the browser TTS
-  useEffect(() => {
-    if (!speechEnabled) return;
-    const last = messages.slice().reverse().find(m => m.type === 'bot');
-    if (!last) return;
-    // Speak the last bot message
-    try {
-      const utter = new SpeechSynthesisUtterance(last.content);
-      utter.lang = 'en-US';
-      // Choose a voice if available
-      const voices = window.speechSynthesis.getVoices();
-      if (voices && voices.length > 0) {
-        const voice = voices.find(v => /en|alloy|female|male/i.test(v.name)) || voices[0];
-        if (voice) utter.voice = voice as SpeechSynthesisVoice;
-      }
-      window.speechSynthesis.cancel();
-      window.speechSynthesis.speak(utter);
-    } catch {
-      // ignore TTS errors
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [messages]);
 
   const generateBotResponse = async (userInput: string, step: number) => {
     setIsTyping(true);
@@ -376,23 +354,6 @@ export default function InterviewChatbot({ isOpen, onClose, onInterviewGenerated
                   <Send className="size-4" />
                 </Button>
 
-                {/* Voice input toggle */}
-                <Button
-                  variant={recognizing ? "destructive" : "ghost"}
-                  onClick={() => (recognizing ? stopRecognition() : startRecognition())}
-                  className="text-white p-2 rounded-full"
-                >
-                  {recognizing ? 'Stop' : 'Voice'}
-                </Button>
-
-                {/* TTS toggle */}
-                <Button
-                  variant={speechEnabled ? "secondary" : "ghost"}
-                  onClick={() => setSpeechEnabled(s => !s)}
-                  className="text-white p-2 rounded-full"
-                >
-                  {speechEnabled ? 'TTS On' : 'TTS Off'}
-                </Button>
               </div>
             </div>
           </div>

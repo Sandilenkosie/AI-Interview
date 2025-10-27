@@ -1,35 +1,1088 @@
-[00:00:01.511] Server  LOG      ✓ Ready in 1078ms
-[00:00:15.759] Server  LOG      ○ Compiling /dashboard/agent ...
-[00:00:41.325] Server  LOG      ✓ Compiled in 178ms
-[00:00:42.401] Server  LOG      ✓ Compiled in 168ms
-[00:00:43.682] Server  LOG      ✓ Compiled in 152ms
-[00:00:45.215] Server  LOG      ✓ Compiled in 241ms
-[00:01:25.002] Browser WARN    signaling socket closed on error: 4100 websocket connection timed out
-[00:01:25.002] Browser WARN    Initial WebSocket connection failed. Will try again.
-[00:01:28.864] Browser ERROR   Meeting ended in error: Meeting has ended
-[00:01:28.864] Browser WARN    Signaling connection interrupted by a disconnect.
-[00:01:28.864] Browser ERROR   Call error: {"action":"error","callClientId":"17615920684590.8198365010162817","error":{"msg":"Exiting meeting because room was deleted","type":"no-room"},"errorMsg":"Meeting has ended"}
-[00:01:28.864] Browser ERROR   Call error: {"duration":29921,"error":{"action":"error","callClientId":"17615920684590.8198365010162817","error":{"msg":"Exiting meeting because room was deleted","type":"no-room"},"errorMsg":"Meeting has ended"},"stage":"daily-call-join","timestamp":"2025-10-27T19:08:19.399Z","type":"daily-call-join-error"}
-[00:01:28.864] Browser ERROR   Call error: {"context":{"hasAssistant":true,"hasSquad":false,"hasWorkflow":false,"isMobile":true},"error":{"action":"error","callClientId":"17615920684590.8198365010162817","error":{"msg":"Exiting meeting because room was deleted","type":"no-room"},"errorMsg":"Meeting has ended"},"stage":"unknown","timestamp":"2025-10-27T19:08:19.400Z","totalDuration":32267,"type":"start-method-error"}
-[00:02:24.725] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:00.336] Server  LOG      ○ Compiling / ...
-[00:06:47.202] Server  LOG      ✓ Compiled in 1314ms
-[00:08:09.185] Server  LOG      ○ Compiling /dashboard ...
-[00:08:15.292] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:48.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:11.887] Browser WARN    signaling socket closed on error: 1006
-[00:09:11.887] Browser WARN    Initial WebSocket connection failed. Will try again.
-[00:09:16.579] Browser ERROR   Meeting ended in error: Meeting has ended
-[00:09:16.579] Browser WARN    Signaling connection interrupted by a disconnect.
-[00:09:16.579] Browser ERROR   Call error: {"action":"error","callClientId":"17615925444840.4845413322523645","error":{"msg":"Exiting meeting because room was deleted","type":"no-room"},"errorMsg":"Meeting has ended"}
-[00:09:16.579] Browser ERROR   Call error: {"duration":22712,"error":{"action":"error","callClientId":"17615925444840.4845413322523645","error":{"msg":"Exiting meeting because room was deleted","type":"no-room"},"errorMsg":"Meeting has ended"},"stage":"daily-call-join","timestamp":"2025-10-27T19:16:07.198Z","type":"daily-call-join-error"}
-[00:09:16.579] Browser ERROR   Call error: {"context":{"hasAssistant":true,"hasSquad":false,"hasWorkflow":false,"isMobile":false},"error":{"action":"error","callClientId":"17615925444840.4845413322523645","error":{"msg":"Exiting meeting because room was deleted","type":"no-room"},"errorMsg":"Meeting has ended"},"stage":"unknown","timestamp":"2025-10-27T19:16:07.199Z","totalDuration":23790,"type":"start-method-error"}
-[00:09:38.188] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:46.499] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:02.371] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:21.913] Server  LOG        Reload env: .env
-[00:12:22.253] Server  LOG      ✓ Compiled in 135ms
-[00:12:26.437] Server  LOG        Reload env: .env
-[00:12:26.649] Server  LOG      ✓ Compiled in 48ms
-[00:12:30.408] Server  LOG        Reload env: .env
-[00:12:30.678] Server  LOG      ✓ Compiled in 44ms
+[00:00:02.079] Server  LOG      ✓ Ready in 1454ms
+[00:01:30.425] Server  LOG      ○ Compiling /dashboard/agent ...
+[00:01:43.671] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:49.161] Browser ERROR   Call error: {"context":{"hasAssistant":true,"hasSquad":false,"hasWorkflow":false,"isMobile":false},"error":{"data":null,"error":{"error":"Bad Request","message":"Couldn't Get Assistant. `assistantId` 50f7c878-9a70-4705-86e1-1292ddbbf295 Does Not Exist.","statusCode":400}},"stage":"unknown","timestamp":"2025-10-27T20:08:49.909Z","totalDuration":1137,"type":"start-method-error"}
+[00:12:37.395] Server  LOG        Reload env: .env
+[00:12:37.914] Server  LOG      ✓ Compiled in 291ms
+[00:12:46.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:33.599] Server  LOG      ○ Compiling / ...
+[00:19:03.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:08.820] Server  LOG      ○ Compiling /dashboard ...
+[00:19:11.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:20.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:15.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:30.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:33.829] Server  LOG      ✓ Compiled in 460ms
+[00:31:19.074] Server  LOG      ✓ Compiled in 199ms
+[00:31:20.178] Browser ERROR   ./components/agent.tsx:43:10
+Ecmascript file had an error
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [isSpeaking, setIsSpeaking] = useState(false);
+     |          ^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+the name `isSpeaking` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:31:20.178] Browser ERROR   ./components/agent.tsx:43:22
+Ecmascript file had an error
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [isSpeaking, setIsSpeaking] = useState(false);
+     |                      ^^^^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+the name `setIsSpeaking` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:31:25.537] Server  LOG      ✓ Compiled in 140ms
+[00:31:26.173] Browser ERROR   ./components/agent.tsx:43:19
+Ecmascript file had an error
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [current, setIsSpeaking] = useState(false);
+     |                   ^^^^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+the name `setIsSpeaking` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:31:27.241] Server  LOG      ✓ Compiled in 130ms
+[00:31:28.172] Browser ERROR   ./components/agent.tsx:43:20
+Ecmascript file had an error
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [currentS, setIsSpeaking] = useState(false);
+     |                    ^^^^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+the name `setIsSpeaking` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:31:30.732] Server  LOG      ✓ Compiled in 126ms
+[00:31:31.176] Browser ERROR   ./components/agent.tsx:43:23
+Ecmascript file had an error
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [currentSpea, setIsSpeaking] = useState(false);
+     |                       ^^^^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+the name `setIsSpeaking` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:31:31.972] Server  LOG      ✓ Compiled in 133ms
+[00:31:32.171] Browser ERROR   ./components/agent.tsx:43:24
+Ecmascript file had an error
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [currentSpeak, setIsSpeaking] = useState(false);
+     |                        ^^^^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+the name `setIsSpeaking` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:31:35.740] Server  LOG      ✓ Compiled in 135ms
+[00:31:36.174] Browser ERROR   ./components/agent.tsx:43:27
+Ecmascript file had an error
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [currentSpeaking, setIsSpeaking] = useState(false);
+     |                           ^^^^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+the name `setIsSpeaking` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:31:53.295] Server  LOG      ✓ Compiled in 164ms
+[00:31:55.779] Server  LOG      ✓ Compiled in 120ms
+[00:32:12.186] Server  LOG      ✓ Compiled in 162ms
+[00:32:16.945] Server  LOG      ✓ Compiled in 122ms
+[00:32:19.061] Server  LOG      ✓ Compiled in 122ms
+[00:32:26.854] Server  LOG      ✓ Compiled in 152ms
+[00:32:27.174] Browser ERROR   ./components/agent.tsx:43:67
+Parsing ecmascript source code failed
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [currentSpeaking, setCurrentSpeaking] = useState("user" | );
+     |                                                                   ^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:32:28.203] Server  LOG      ✓ Compiled in 150ms
+[00:32:30.758] Server  LOG      ✓ Compiled in 121ms
+[00:32:35.145] Server  LOG      ✓ Compiled in 127ms
+[00:32:37.283] Server  LOG      ✓ Compiled in 128ms
+[00:32:39.636] Server  LOG      ✓ Compiled in 124ms
+[00:32:56.464] Server  LOG      ✓ Compiled in 147ms
+[00:33:05.654] Server  LOG      ✓ Compiled in 119ms
+[00:33:06.181] Browser ERROR   ./components/agent.tsx:43:51
+Parsing ecmascript source code failed
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [currentSpeaking = useState('user' | 'ai');
+     |                                                   ^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+Expected ',', got ';'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:33:07.366] Server  LOG      ✓ Compiled in 132ms
+[00:33:08.177] Browser ERROR   ./components/agent.tsx:43:25
+Parsing ecmascript source code failed
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const [currentSpeaking) = useState('user' | 'ai');
+     |                         ^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+Expected ',', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:33:11.192] Browser ERROR   ./components/agent.tsx:43:9
+Parsing ecmascript source code failed
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const currentSpeaking) = useState('user' | 'ai');
+     |         ^^^^^^^^^^^^^^^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:33:11.192] Browser ERROR   ./components/agent.tsx:43:24
+Parsing ecmascript source code failed
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const currentSpeaking) = useState('user' | 'ai');
+     |                        ^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:33:12.172] Browser ERROR   ./components/agent.tsx:43:9
+Parsing ecmascript source code failed
+  41 |   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+  42 |   const [isSpeaking, setIsSpeaking] = useState(false);
+> 43 |   const (currentSpeaking) = useState('user' | 'ai');
+     |         ^
+  44 |   const [messages, setMessages] = useState<saveMessage[]>([]);
+  45 |
+  46 |   useEffect(() => {
+
+Unexpected token `(`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:34:45.712] Server  LOG      ✓ Compiled in 137ms
+[00:34:48.745] Server  LOG      ✓ Compiled in 158ms
+[00:34:49.171] Browser ERROR   ./components/agent.tsx:137:34
+Parsing ecmascript source code failed
+  135 |           <div className="bg-slate-800 border border-slate-600 rounded-2xl p-6 mb-24">
+  136 |             <div className="text-center">
+> 137 |               {currentSpeaking = ? (
+      |                                  ^
+  138 |                 <div className="text-lg text-white bg-slate-700 px-6 py-4 rounded-xl">
+  139 |                   {lastestMessage}
+  140 |                 </div>
+
+Expected '</', got '?'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:34:50.736] Server  LOG      ✓ Compiled in 135ms
+[00:34:51.169] Browser ERROR   ./components/agent.tsx:137:16
+Ecmascript file had an error
+  135 |           <div className="bg-slate-800 border border-slate-600 rounded-2xl p-6 mb-24">
+  136 |             <div className="text-center">
+> 137 |               {currentSpeaking = '' ? (
+      |                ^^^^^^^^^^^^^^^
+  138 |                 <div className="text-lg text-white bg-slate-700 px-6 py-4 rounded-xl">
+  139 |                   {lastestMessage}
+  140 |                 </div>
+
+cannot reassign to a variable declared with `const`
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:34:53.523] Server  LOG      ✓ Compiled in 117ms
+[00:34:54.173] Browser ERROR   ./components/agent.tsx:137:16
+Ecmascript file had an error
+  135 |           <div className="bg-slate-800 border border-slate-600 rounded-2xl p-6 mb-24">
+  136 |             <div className="text-center">
+> 137 |               {currentSpeaking = 'user' ? (
+      |                ^^^^^^^^^^^^^^^
+  138 |                 <div className="text-lg text-white bg-slate-700 px-6 py-4 rounded-xl">
+  139 |                   {lastestMessage}
+  140 |                 </div>
+
+cannot reassign to a variable declared with `const`
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:35:03.832] Server  LOG      ✓ Compiled in 156ms
+[00:35:04.168] Browser ERROR   ./components/agent.tsx:137:16
+Ecmascript file had an error
+  135 |           <div className="bg-slate-800 border border-slate-600 rounded-2xl p-6 mb-24">
+  136 |             <div className="text-center">
+> 137 |               {currentSpeaking = 'user' ? (
+      |                ^^^^^^^^^^^^^^^
+  138 |                 <div className="text-lg text-white bg-slate-700 px-6 py-4 rounded-xl">
+  139 |                   {lastestMessage}
+  140 |                 </div>
+
+cannot reassign to a variable declared with `const`
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:35:10.391] Server  LOG      ✓ Compiled in 122ms
+[00:35:11.184] Browser ERROR   ./components/agent.tsx:122:39
+Parsing ecmascript source code failed
+  120 |
+  121 |             <Card className={`flex-1 p-6 bg-slate-800 border-2 transition-all duration-300 ${
+> 122 |               currentSpeaking = 'ai? 'border-purple-400 shadow-lg shadow-purple-400/20' : 'border-slate-600'
+      |                                       ^^^^^^
+  123 |             }`}>
+  124 |               <CardContent>
+  125 |                 <div className="text-center text-sm text-gray-300 min-h-[120px] flex flex-col items-center justify-center">
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:35:13.172] Browser ERROR   ./components/agent.tsx:122:40
+Parsing ecmascript source code failed
+  120 |
+  121 |             <Card className={`flex-1 p-6 bg-slate-800 border-2 transition-all duration-300 ${
+> 122 |               currentSpeaking = 'ai ? 'border-purple-400 shadow-lg shadow-purple-400/20' : 'border-slate-600'
+      |                                        ^^^^^^
+  123 |             }`}>
+  124 |               <CardContent>
+  125 |                 <div className="text-center text-sm text-gray-300 min-h-[120px] flex flex-col items-center justify-center">
+
+Expected '</', got 'border'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:35:15.627] Server  LOG      ✓ Compiled in 141ms
+[00:35:16.172] Browser ERROR   ./components/agent.tsx:137:16
+Ecmascript file had an error
+  135 |           <div className="bg-slate-800 border border-slate-600 rounded-2xl p-6 mb-24">
+  136 |             <div className="text-center">
+> 137 |               {currentSpeaking = 'user' ? (
+      |                ^^^^^^^^^^^^^^^
+  138 |                 <div className="text-lg text-white bg-slate-700 px-6 py-4 rounded-xl">
+  139 |                   {lastestMessage}
+  140 |                 </div>
+
+cannot reassign to a variable declared with `const`
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:35:47.168] Browser ERROR   ./components/agent.tsx:137:16
+Ecmascript file had an error
+  135 |           <div className="bg-slate-800 border border-slate-600 rounded-2xl p-6 mb-24">
+  136 |             <div className="text-center">
+> 137 |               {currentSpeaking = 'user' ? (
+      |                ^^^^^^^^^^^^^^^
+  138 |                 <div className="text-lg text-white bg-slate-700 px-6 py-4 rounded-xl">
+  139 |                   {lastestMessage}
+  140 |                 </div>
+
+cannot reassign to a variable declared with `const`
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:35:54.784] Server  LOG      ✓ Compiled in 179ms
+[00:35:55.167] Browser ERROR   ./components/agent.tsx:137:16
+Ecmascript file had an error
+  135 |           <div className="bg-slate-800 border border-slate-600 rounded-2xl p-6 mb-24">
+  136 |             <div className="text-center">
+> 137 |               {currentSpeaking = 'user' ? (
+      |                ^^^^^^^^^^^^^^^
+  138 |                 <div className="text-lg text-white bg-slate-700 px-6 py-4 rounded-xl">
+  139 |                   {lastestMessage}
+  140 |                 </div>
+
+cannot reassign to a variable declared with `const`
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:36:00.915] Server  LOG      ✓ Compiled in 181ms
+[00:36:23.710] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:51.713] Server  LOG      ✓ Compiled in 549ms
+[00:37:52.173] Browser ERROR   ./components/agent.tsx:141:17
+Parsing ecmascript source code failed
+  139 |                   {lastestMessage}
+  140 |                 </div>
+> 141 |               ) : (
+      |                 ^
+  142 |                 <div className="text-gray-400 py-8">
+  143 |                   <p className="text-lg mb-2">Ready to start your AI call</p>
+  144 |                   <p className="text-sm">{lastestMessage}</p>
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:37:55.183] Browser ERROR   ./components/agent.tsx:141:17
+Parsing ecmascript source code failed
+  139 |                   {lastestMessage}
+  140 |                 </div>
+> 141 |               ) : (
+      |                 ^
+  142 |                 <div className="text-gray-400 py-8">
+  143 |                   <p className="text-lg mb-2">Ready to start your AI call</p>
+  144 |                   <p className="text-sm">{lastestMessage}</p>
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:37:58.170] Browser ERROR   ./components/agent.tsx:141:17
+Parsing ecmascript source code failed
+  139 |                   {lastestMessage}
+  140 |                 </div>
+> 141 |               ) : (
+      |                 ^
+  142 |                 <div className="text-gray-400 py-8">
+  143 |                   <p className="text-lg mb-2">Ready to start your AI call</p>
+  144 |                   <p className="text-sm">{lastestMessage}</p>
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./components/agent.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Client Component Browser]
+    ./app/dashboard/agent/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/agent.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Client Component SSR]
+    ./app/dashboard/agent/page.tsx [Server Component]
+[00:38:10.382] Server  LOG      ✓ Compiled in 131ms
+[00:38:19.099] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:27.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:12.373] Server  LOG      ✓ Compiled in 470ms
+[00:41:13.177] Browser ERROR   ./app/page.tsx:15:1
+Export default doesn't exist in target module
+  13 | import ImageSlider from "@/components/ImageSlider";
+  14 | import { useUser } from "@stackframe/stack";
+> 15 | import InterviewChatbot from "@/components/InterviewChatbot";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | interface Interview {
+  18 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:13.177] Browser ERROR   ./app/page.tsx:15:1
+Export default doesn't exist in target module
+  13 | import ImageSlider from "@/components/ImageSlider";
+  14 | import { useUser } from "@stackframe/stack";
+> 15 | import InterviewChatbot from "@/components/InterviewChatbot";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | interface Interview {
+  18 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:13.177] Browser ERROR   ./components/DashboardContainer.tsx:6:1
+Export default doesn't exist in target module
+  4 | import { Plus, Calendar, Users, MessageSquare, Zap, Star, TrendingUp } from "lucide-react";
+  5 | import { useRouter } from "next/navigation";
+> 6 | import InterviewChatbot from "@/components/InterviewChatbot";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | interface Interview {
+  9 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./components/DashboardContainer.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/DashboardContainer.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+[00:41:13.177] Browser ERROR   ./components/DashboardContainer.tsx:6:1
+Export default doesn't exist in target module
+  4 | import { Plus, Calendar, Users, MessageSquare, Zap, Star, TrendingUp } from "lucide-react";
+  5 | import { useRouter } from "next/navigation";
+> 6 | import InterviewChatbot from "@/components/InterviewChatbot";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | interface Interview {
+  9 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./components/DashboardContainer.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/DashboardContainer.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+[00:42:01.721] Server  LOG      ✓ Compiled in 157ms
+[00:42:03.167] Browser ERROR   ./components/InterviewChatbot.tsx:266:3
+Parsing ecmascript source code failed
+  264 | //   // Always render, but change size and content based on isOpen state
+  265 |
+> 266 |   return (
+      |   ^^^^^^^^
+> 267 |     <div
+      | ^^^^^^^^
+> 268 |       className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${
+      | ^^^^^^^^
+> 269 |         isOpen ? "chatbot-expand" : "chatbot-collapse"
+      | ^^^^^^^^
+> 270 |       }`}
+      | ^^^^^^^^
+> 271 |       style={{
+      | ^^^^^^^^
+> 272 |         width: isOpen ? '384px' : '56px',
+      | ^^^^^^^^
+> 273 |         height: isOpen ? '500px' : '56px',
+      | ^^^^^^^^
+> 274 |       }}
+      | ^^^^^^^^
+> 275 |     >
+      | ^^^^^^^^
+> 276 |       <Card
+      | ^^^^^^^^
+> 277 |         className="h-full w-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 border-purple-500/30 backdrop-blur-md shadow-2xl transition-all duration-300"
+      | ^^^^^^^^
+> 278 |         style={{
+      | ^^^^^^^^
+> 279 |           borderRadius: isOpen ? '12px' : '50%',
+      | ^^^^^^^^
+> 280 |         }}
+      | ^^^^^^^^
+> 281 |       >
+      | ^^^^^^^^
+> 282 |         {isOpen ? (
+      | ^^^^^^^^
+> 283 |           <CardHeader className=" text-white rounded-t-lg shadow-lg">
+      | ^^^^^^^^
+> 284 |             <div className="flex items-center justify-between">
+      | ^^^^^^^^
+> 285 |               <div className="flex items-center gap-3">
+      | ^^^^^^^^
+> 286 |                 <div className="relative">
+      | ^^^^^^^^
+> 287 |                   <Brain className="size-7 animate-pulse text-purple-200" />
+      | ^^^^^^^^
+> 288 |                   <div className="absolute -top-1 -right-1 size-3 bg-green-400 rounded-full animate-ping"></div>
+      | ^^^^^^^^
+> 289 |                 </div>
+      | ^^^^^^^^
+> 290 |                 <div>
+      | ^^^^^^^^
+> 291 |                   <CardTitle className="text-xl font-bold">Chat Assistant</CardTitle>
+      | ^^^^^^^^
+> 292 |                   <div className="text-sm opacity-90">AI-Powered Interview Helper</div>
+      | ^^^^^^^^
+> 293 |                 </div>
+      | ^^^^^^^^
+> 294 |               </div>
+      | ^^^^^^^^
+> 295 |               <Button
+      | ^^^^^^^^
+> 296 |                 variant="ghost"
+      | ^^^^^^^^
+> 297 |                 size="sm"
+      | ^^^^^^^^
+> 298 |                 onClick={onClose}
+      | ^^^^^^^^
+> 299 |                 className="text-white hover:bg-white/30 transition-all duration-200 rounded-full p-2"
+      | ^^^^^^^^
+> 300 |               >
+      | ^^^^^^^^
+> 301 |                 <X className="size-6" />
+      | ^^^^^^^^
+> 302 |               </Button>
+      | ^^^^^^^^
+> 303 |             </div>
+      | ^^^^^^^^
+> 304 |           </CardHeader>
+      | ^^^^^^^^
+> 305 |         ) : (
+      | ^^^^^^^^
+> 306 |           <div className="h-full w-full flex items-center justify-center">
+      | ^^^^^^^^
+> 307 |             <Button
+      | ^^^^^^^^
+> 308 |               className="h-14 w-14 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 animate-bounce-in"
+      | ^^^^^^^^
+> 309 |               onClick={onToggle}
+      | ^^^^^^^^
+> 310 |               style={{
+      | ^^^^^^^^
+> 311 |                 width: '56px',
+      | ^^^^^^^^
+> 312 |                 borderRadius: '50%',
+      | ^^^^^^^^
+> 313 |               }}
+      | ^^^^^^^^
+> 314 |             >
+      | ^^^^^^^^
+> 315 |               <Brain className="animate-pulse size-6" />
+      | ^^^^^^^^
+> 316 |             </Button>
+      | ^^^^^^^^
+> 317 |           </div>
+      | ^^^^^^^^
+> 318 |         )}
+      | ^^^^^^^^
+> 319 |
+      | ^^^^^^^^
+> 320 |         {isOpen && (
+      | ^^^^^^^^
+> 321 |           <CardContent className="p-0 flex flex-col" style={{ height: 'calc(100% - 80px)' }}>
+      | ^^^^^^^^
+> 322 |             {/* Messages */}
+      | ^^^^^^^^
+> 323 |             <div className="flex-1 overflow-y-auto scrollbar-hide p-4 space-y-4">
+      | ^^^^^^^^
+> 324 |             {messages.map((message) => (
+      | ^^^^^^^^
+> 325 |               <div
+      | ^^^^^^^^
+> 326 |                 key={message.id}
+      | ^^^^^^^^
+> 327 |                 className={`flex items-end gap-2 ${message.type === "user" ? "justify-end" : "justify-start"}`}
+      | ^^^^^^^^
+> 328 |               >
+      | ^^^^^^^^
+> 329 |                 {message.type === "bot" && <Brain className="size-6 text-purple-400" />}
+      | ^^^^^^^^
+> 330 |                 <div
+      | ^^^^^^^^
+> 331 |                   className={`max-w-[75%] p-4 rounded-2xl shadow-lg transition-all duration-200 ${
+      | ^^^^^^^^
+> 332 |                     message.type === "user"
+      | ^^^^^^^^
+> 333 |                       ? "bg-gradient-to-r from-purple-500 to-purple-600 text-white"
+      | ^^^^^^^^
+> 334 |                       : "bg-gradient-to-r from-slate-600 to-slate-700 text-gray-200"
+      | ^^^^^^^^
+> 335 |                   }`}
+      | ^^^^^^^^
+> 336 |                 >
+      | ^^^^^^^^
+> 337 |                   <div className="text-sm leading-relaxed">{message.content}</div>
+      | ^^^^^^^^
+> 338 |                   <div className="text-xs opacity-70 mt-2">
+      | ^^^^^^^^
+> 339 |                     {message.timestamp.toLocaleTimeString()}
+      | ^^^^^^^^
+> 340 |                   </div>
+      | ^^^^^^^^
+> 341 |                 </div>
+      | ^^^^^^^^
+> 342 |                 {message.type === "user" && <User className="size-6 text-purple-400" />}
+      | ^^^^^^^^
+> 343 |               </div>
+      | ^^^^^^^^
+> 344 |             ))}
+      | ^^^^^^^^
+> 345 |
+      | ^^^^^^^^
+> 346 |             {isTyping && (
+      | ^^^^^^^^
+> 347 |               <div className="flex items-end gap-2 justify-start">
+      | ^^^^^^^^
+> 348 |                 <Brain className="size-6 text-purple-400" />
+      | ^^^^^^^^
+> 349 |                 <div className="bg-gradient-to-r from-slate-600 to-slate-700 text-gray-200 p-4 rounded-2xl shadow-lg flex items-center gap-2">
+      | ^^^^^^^^
+> 350 |                   <Loader2 className="size-4 animate-spin" />
+      | ^^^^^^^^
+> 351 |                   <span className="text-sm">AI is thinking...</span>
+      | ^^^^^^^^
+> 352 |                 </div>
+      | ^^^^^^^^
+> 353 |               </div>
+      | ^^^^^^^^
+> 354 |             )}
+      | ^^^^^^^^
+> 355 |
+      | ^^^^^^^^
+> 356 |             <div ref={messagesEndRef} />
+      | ^^^^^^^^
+> 357 |           </div>
+      | ^^^^^^^^
+> 358 |
+      | ^^^^^^^^
+> 359 |           {/* Input */}
+      | ^^^^^^^^
+> 360 |           <div className="p-4 border-t border-purple-500/20 bg-slate-800/50">
+      | ^^^^^^^^
+> 361 |             <div className="flex gap-3">
+      | ^^^^^^^^
+> 362 |               <Input
+      | ^^^^^^^^
+> 363 |                 value={input}
+      | ^^^^^^^^
+> 364 |                 onChange={(e) => setInput(e.target.value)}
+      | ^^^^^^^^
+> 365 |                 onKeyPress={handleKeyPress}
+      | ^^^^^^^^
+> 366 |                 placeholder={steps[currentStep]?.placeholder || "Type your message..."}
+      | ^^^^^^^^
+> 367 |                 className="bg-slate-700/80 border-purple-500/40 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all duration-200 rounded-full"
+      | ^^^^^^^^
+> 368 |                 disabled={isTyping}
+      | ^^^^^^^^
+> 369 |               />
+      | ^^^^^^^^
+> 370 |               <div className="flex items-center gap-2">
+      | ^^^^^^^^
+> 371 |                 <Button
+      | ^^^^^^^^
+> 372 |                   onClick={handleSendMessage}
+      | ^^^^^^^^
+> 373 |                   disabled={!input.trim() || isTyping}
+      | ^^^^^^^^
+> 374 |                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl transition-all duration-200 rounded-full px-4"
+      | ^^^^^^^^
+> 375 |                 >
+      | ^^^^^^^^
+> 376 |                   <Send className="size-4" />
+      | ^^^^^^^^
+> 377 |                 </Button>
+      | ^^^^^^^^
+> 378 |
+      | ^^^^^^^^
+> 379 |                 {/* Voice input toggle */}
+      | ^^^^^^^^
+> 380 |                 <Button
+      | ^^^^^^^^
+> 381 |                   variant={recognizing ? "destructive" : "ghost"}
+      | ^^^^^^^^
+> 382 |                   onClick={() => (recognizing ? stopRecognition() : startRecognition())}
+      | ^^^^^^^^
+> 383 |                   className="text-white p-2 rounded-full"
+      | ^^^^^^^^
+> 384 |                 >
+      | ^^^^^^^^
+> 385 |                   {recognizing ? 'Stop' : 'Voice'}
+      | ^^^^^^^^
+> 386 |                 </Button>
+      | ^^^^^^^^
+> 387 |
+      | ^^^^^^^^
+> 388 |                 {/* TTS toggle */}
+      | ^^^^^^^^
+> 389 |                 <Button
+      | ^^^^^^^^
+> 390 |                   variant={speechEnabled ? "secondary" : "ghost"}
+      | ^^^^^^^^
+> 391 |                   onClick={() => setSpeechEnabled(s => !s)}
+      | ^^^^^^^^
+> 392 |                   className="text-white p-2 rounded-full"
+      | ^^^^^^^^
+> 393 |                 >
+      | ^^^^^^^^
+> 394 |                   {speechEnabled ? 'TTS On' : 'TTS Off'}
+      | ^^^^^^^^
+> 395 |                 </Button>
+      | ^^^^^^^^
+> 396 |               </div>
+      | ^^^^^^^^
+> 397 |             </div>
+      | ^^^^^^^^
+> 398 |           </div>
+      | ^^^^^^^^
+> 399 |         </CardContent>
+      | ^^^^^^^^
+> 400 |         )}
+      | ^^^^^^^^
+> 401 |       </Card>
+      | ^^^^^^^^
+> 402 |     </div>
+      | ^^^^^^^^
+> 403 |   );
+      | ^^^^^
+  404 | }
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./components/InterviewChatbot.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/InterviewChatbot.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:03.167] Browser ERROR   ./app/page.tsx:15:1
+Export default doesn't exist in target module
+  13 | import ImageSlider from "@/components/ImageSlider";
+  14 | import { useUser } from "@stackframe/stack";
+> 15 | import InterviewChatbot from "@/components/InterviewChatbot";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | interface Interview {
+  18 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:03.167] Browser ERROR   ./app/page.tsx:15:1
+Export default doesn't exist in target module
+  13 | import ImageSlider from "@/components/ImageSlider";
+  14 | import { useUser } from "@stackframe/stack";
+> 15 | import InterviewChatbot from "@/components/InterviewChatbot";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |
+  17 | interface Interview {
+  18 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:03.168] Browser ERROR   ./components/DashboardContainer.tsx:6:1
+Export default doesn't exist in target module
+  4 | import { Plus, Calendar, Users, MessageSquare, Zap, Star, TrendingUp } from "lucide-react";
+  5 | import { useRouter } from "next/navigation";
+> 6 | import InterviewChatbot from "@/components/InterviewChatbot";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | interface Interview {
+  9 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./components/DashboardContainer.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/DashboardContainer.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+[00:42:03.168] Browser ERROR   ./components/DashboardContainer.tsx:6:1
+Export default doesn't exist in target module
+  4 | import { Plus, Calendar, Users, MessageSquare, Zap, Star, TrendingUp } from "lucide-react";
+  5 | import { useRouter } from "next/navigation";
+> 6 | import InterviewChatbot from "@/components/InterviewChatbot";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | interface Interview {
+  9 |   id: number;
+
+The export default was not found in module [project]/components/InterviewChatbot.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./components/DashboardContainer.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Client Component Browser]
+    ./app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/DashboardContainer.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Client Component SSR]
+    ./app/dashboard/page.tsx [Server Component]
+[00:42:18.074] Server  LOG      ✓ Compiled in 185ms
+[00:42:29.984] Server  LOG      ✓ Compiled in 167ms
+[00:42:32.064] Server  LOG      ✓ Compiled in 157ms
+[00:43:04.300] Server  LOG      ✓ Compiled in 157ms
+[00:43:25.239] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:33.722] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:43.027] Server  LOG      ✓ Compiled in 1576ms
+[00:47:00.000] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:15.691] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
