@@ -23,14 +23,7 @@ export default function DashboardPage() {
   const router = useRouter();
   const [interviews, setInterviews] = useState<Interview[]>([]);
   const [loading, setLoading] = useState(false);
-  const [generating, setGenerating] = useState(false);
   const [chatbotOpen, setChatbotOpen] = useState(false);
-
-  // Interview generation form state
-  const [role, setRole] = useState("");
-  const [interviewType, setInterviewType] = useState("");
-  const [experienceLevel, setExperienceLevel] = useState("");
-  const [numQuestions, setNumQuestions] = useState(5);
 
 
   // Redirect if not signed in
@@ -60,46 +53,7 @@ export default function DashboardPage() {
     }
   };
 
-  const generateInterview = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!role || !interviewType || !experienceLevel) {
-      alert('Please fill in all fields');
-      return;
-    }
-
-    setGenerating(true);
-    try {
-      const response = await fetch('/api/interviews/create/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          role,
-          type: interviewType,
-          level: experienceLevel,
-          num_questions: numQuestions,
-        }),
-      });
-
-      if (response.ok) {
-        const newInterview = await response.json();
-        setInterviews([newInterview, ...interviews]);
-        // Reset form
-        setRole("");
-        setInterviewType("");
-        setExperienceLevel("");
-        setNumQuestions(5);
-      } else {
-        alert('Error generating interview');
-      }
-    } catch (error) {
-      console.error('Error generating interview:', error);
-      alert('Error generating interview');
-    } finally {
-      setGenerating(false);
-    }
-  };
+  // Generation is handled via a dedicated chatbot/modal — keep dashboard page focused on listing.
 
   const handleInterviewGenerated = (interviewData: Interview) => {
     setInterviews([interviewData, ...interviews]);
@@ -115,18 +69,8 @@ export default function DashboardPage() {
       <DashboardContainer
         interviews={interviews}
         loading={loading}
-        generating={generating}
         chatbotOpen={chatbotOpen}
         setChatbotOpen={setChatbotOpen}
-        role={role}
-        setRole={setRole}
-        interviewType={interviewType}
-        setInterviewType={setInterviewType}
-        experienceLevel={experienceLevel}
-        setExperienceLevel={setExperienceLevel}
-        numQuestions={numQuestions}
-        setNumQuestions={setNumQuestions}
-        generateInterview={generateInterview}
         handleInterviewGenerated={handleInterviewGenerated}
       />
     </DashboardLayout>

@@ -25,6 +25,11 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+// Pre-compute a random width once at module load to avoid calling impure
+// functions like Math.random() during render. This keeps components pure
+// while still providing a variable skeleton width.
+const RANDOM_SKELETON_WIDTH = `${Math.floor(Math.random() * 40) + 50}%`
+
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
 const SIDEBAR_WIDTH = "16rem"
@@ -607,9 +612,7 @@ function SidebarMenuSkeleton({
   showIcon?: boolean
 }) {
   // Random width between 50 to 90%.
-  const width = React.useMemo(() => {
-    return `${Math.floor(Math.random() * 40) + 50}%`
-  }, [])
+  const width = RANDOM_SKELETON_WIDTH
 
   return (
     <div

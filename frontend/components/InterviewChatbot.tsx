@@ -4,7 +4,36 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Brain, Send, X, MessageSquare, Loader2, User } from "lucide-react";
+import { Brain, Send, X, Loader2, User } from "lucide-react";
+
+// Small typed wrapper for browser SpeechRecognition to avoid `any` and satisfy TS
+type SpeechRecognitionResultArray = { [i: number]: { [j: number]: { transcript: string } } };
+
+type SpeechRecognitionEventLike = {
+  results: SpeechRecognitionResultArray;
+};
+
+type SpeechRecognitionLike = {
+  lang: string;
+  interimResults: boolean;
+  maxAlternatives?: number;
+  onresult?: (e: SpeechRecognitionEventLike) => void;
+  onerror?: (e: Event) => void;
+  onend?: () => void;
+  start: () => void;
+  stop: () => void;
+};
+
+interface SpeechRecognitionConstructorLike {
+  new (): SpeechRecognitionLike;
+}
+
+declare global {
+  interface Window {
+    SpeechRecognition?: SpeechRecognitionConstructorLike;
+    webkitSpeechRecognition?: SpeechRecognitionConstructorLike;
+  }
+}
 
 interface Interview {
   id: number;
@@ -43,8 +72,11 @@ export default function InterviewChatbot({ isOpen, onClose, onInterviewGenerated
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+  const [speechEnabled, setSpeechEnabled] = useState(true);
+  const [recognizing, setRecognizing] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
 
   const steps = [
     { field: "role", question: "What job role would you like to prepare for?", placeholder: "e.g. Software Engineer" },
@@ -59,6 +91,51 @@ export default function InterviewChatbot({ isOpen, onClose, onInterviewGenerated
 
   useEffect(() => {
     scrollToBottom();
+  }, [messages]);
+
+  // Initialize speech recognition (if available) when component mounts
+  useEffect(() => {
+    const SpeechRecognitionConstructor = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognitionConstructor) return;
+    try {
+      const r = new SpeechRecognitionConstructor();
+      r.lang = 'en-US';
+      r.interimResults = false;
+      r.maxAlternatives = 1;
+      r.onresult = (event: SpeechRecognitionEventLike) => {
+        const transcript = event.results[0][0].transcript;
+        setInput(prev => (prev ? prev + ' ' + transcript : transcript));
+        setRecognizing(false);
+      };
+      r.onerror = () => setRecognizing(false);
+      r.onend = () => setRecognizing(false);
+      recognitionRef.current = r;
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  // When a new bot message is added, optionally speak it using the browser TTS
+  useEffect(() => {
+    if (!speechEnabled) return;
+    const last = messages.slice().reverse().find(m => m.type === 'bot');
+    if (!last) return;
+    // Speak the last bot message
+    try {
+      const utter = new SpeechSynthesisUtterance(last.content);
+      utter.lang = 'en-US';
+      // Choose a voice if available
+      const voices = window.speechSynthesis.getVoices();
+      if (voices && voices.length > 0) {
+        const voice = voices.find(v => /en|alloy|female|male/i.test(v.name)) || voices[0];
+        if (voice) utter.voice = voice as SpeechSynthesisVoice;
+      }
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utter);
+    } catch {
+      // ignore TTS errors
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages]);
 
   const generateBotResponse = async (userInput: string, step: number) => {
@@ -111,7 +188,7 @@ export default function InterviewChatbot({ isOpen, onClose, onInterviewGenerated
             } else {
               response += "\n\n❌ There was an error generating your interview. Please try again.";
             }
-          } catch (error) {
+          } catch {
             response += "\n\n❌ There was an error generating your interview. Please try again.";
           }
 
@@ -153,6 +230,28 @@ export default function InterviewChatbot({ isOpen, onClose, onInterviewGenerated
 
     if (currentStep < steps.length - 1) {
       setCurrentStep(prev => prev + 1);
+    }
+  };
+
+  const startRecognition = () => {
+    const r = recognitionRef.current;
+    if (!r) return;
+    try {
+      setRecognizing(true);
+      r.start();
+    } catch {
+      setRecognizing(false);
+    }
+  };
+
+  const stopRecognition = () => {
+    const r = recognitionRef.current;
+    if (!r) return;
+    try {
+      r.stop();
+      setRecognizing(false);
+    } catch {
+      setRecognizing(false);
     }
   };
 
@@ -268,13 +367,33 @@ export default function InterviewChatbot({ isOpen, onClose, onInterviewGenerated
                 className="bg-slate-700/80 border-purple-500/40 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all duration-200 rounded-full"
                 disabled={isTyping}
               />
-              <Button
-                onClick={handleSendMessage}
-                disabled={!input.trim() || isTyping}
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl transition-all duration-200 rounded-full px-4"
-              >
-                <Send className="size-4" />
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button
+                  onClick={handleSendMessage}
+                  disabled={!input.trim() || isTyping}
+                  className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl transition-all duration-200 rounded-full px-4"
+                >
+                  <Send className="size-4" />
+                </Button>
+
+                {/* Voice input toggle */}
+                <Button
+                  variant={recognizing ? "destructive" : "ghost"}
+                  onClick={() => (recognizing ? stopRecognition() : startRecognition())}
+                  className="text-white p-2 rounded-full"
+                >
+                  {recognizing ? 'Stop' : 'Voice'}
+                </Button>
+
+                {/* TTS toggle */}
+                <Button
+                  variant={speechEnabled ? "secondary" : "ghost"}
+                  onClick={() => setSpeechEnabled(s => !s)}
+                  className="text-white p-2 rounded-full"
+                >
+                  {speechEnabled ? 'TTS On' : 'TTS Off'}
+                </Button>
+              </div>
             </div>
           </div>
         </CardContent>
